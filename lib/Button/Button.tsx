@@ -2,7 +2,7 @@ import { ButtonVariants } from "./types";
 import { cn } from "../lib/utils";
 import type { VariantProps } from "class-variance-authority";
 
-export const Button = ({
+const Button = ({
   className,
   children,
   size,
@@ -20,3 +20,7 @@ export const Button = ({
     </button>
   )
 }
+
+Button.displayName = "Button"
+
+export { Button, ButtonVariants }

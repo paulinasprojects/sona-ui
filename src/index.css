@@ -1,1 +1,17 @@
 @import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+
+/* Ensure dark mode variants work */
+@custom-variant dark {
+  &:where(.dark, .dark *) {
+    @slot;
+  }
+}
