@@ -21,6 +21,13 @@ export { CardDescription } from './Card/card-description';
 export { CardContent } from './Card/card-content';
 export { CardFooter } from './Card/card-footer';
 
+export { Tabs, useTabsContext } from "./Tabs/tabs";
+export { TabsTrigger } from './Tabs/tabs-trigger';
+export { TabsList } from "./Tabs/tabs-list";
+export { TabsContent } from './Tabs/tabs-content';
+
+
 import "./tailwind.css"
 export * from './Combobox/types';
 export * from './Select/types';
+export * from './Tabs/types';
