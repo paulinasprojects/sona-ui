@@ -13,6 +13,14 @@ export { ComboboxContent } from './Combobox/combobox-content';
 export { ComboboxInput } from "./Combobox/combobox-input";
 export { ComboboxList } from "./Combobox/combobox-list";
 export { ComboboxOption } from './Combobox/combobox-option';
+
+export { Card } from './Card/card';
+export { CardHeader } from './Card/card-header';
+export { CardTitle } from './Card/card-title';
+export { CardDescription } from './Card/card-description';
+export { CardContent } from './Card/card-content';
+export { CardFooter } from './Card/card-footer';
+
 import "./tailwind.css"
 export * from './Combobox/types';
 export * from './Select/types';
