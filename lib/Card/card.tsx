@@ -1,5 +1,4 @@
 import { cn } from "../lib/utils"
-// import { CardProps } from "./types"
 
 const Card = ({ children, className, ...props }: React.ComponentProps<"div">) => {
   return (

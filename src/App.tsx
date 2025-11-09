@@ -14,6 +14,7 @@ import { Tabs } from '../lib/Tabs/tabs';
 import { TabsTrigger } from '../lib/Tabs/tabs-trigger';
 import { TabsList } from '../lib/Tabs/tabs-list';
 import { TabsContent } from '../lib/Tabs/tabs-content';
+import { Pill } from "sona-ui";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <ModeToggle />
         </div>
         <div>
-          <Tabs defaultValue="account">
+          {/* <Tabs defaultValue="account">
             <TabsList>
               <TabsTrigger value="account">Account</TabsTrigger>
               <TabsTrigger value="profile">Profile</TabsTrigger>
@@ -32,7 +33,8 @@ function App() {
             <TabsContent value="account">Account content</TabsContent>
             <TabsContent value="profile">Profile content</TabsContent>
             <TabsContent value="theme">Theme content</TabsContent>
-          </Tabs>
+          </Tabs> */}
+          <Pill label="Pill label" variant="danger" size="small" />
         </div>
       </div>
     </ThemeProvider>
