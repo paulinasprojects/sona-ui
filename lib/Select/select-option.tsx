@@ -11,6 +11,7 @@ const SelectOption = React.forwardRef<HTMLDivElement, SelectOptionProps>(
 
     return (
       <div
+        role="option"
         onClick={() => setValue(value)}
         ref={ref}
         {...props}

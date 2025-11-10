@@ -22,7 +22,11 @@ const SelectTrigger = React.forwardRef<HTMLButtonElement, SelectTriggerProps>(
         {...props}
       >
         <span className={cn(value ? "text-gray-900 dark:text-gray-100" : "text-gray-400")}>
-          {value || placeholder}
+          {value ? value : (
+            <span className="text-gray-400 dark:text-gray-500">
+              {placeholder}
+            </span>
+          )}
         </span>
         <ChevronDown
           className={cn(

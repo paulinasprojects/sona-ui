@@ -7,15 +7,20 @@ const SelectContext = createContext<SelectContextProps | null>(null);
 const Select = ({ value, onValueChange, children, ...props }: React.HTMLAttributes<HTMLDivElement> & SelectProps) => {
   const [internalValue, setInternalValue] = useState<string | undefined>(value);
   const [open, setOpen] = useState<boolean>(false);
+  const isControlled = value !== undefined;
+
+  const currentValue = isControlled ? value : internalValue;
 
   const setValue = (value: string) => {
-    setInternalValue(value);
+    if (!isControlled) setInternalValue(value);
     onValueChange?.(value);
     setOpen(false);
   }
 
+
+
   return (
-    <SelectContext.Provider value={{ value: value ?? internalValue, setValue, open, setOpen }}>
+    <SelectContext.Provider value={{ value: currentValue, setValue, open, setOpen }}>
       <div className="relative w-full" {...props}>
         {children}
       </div>

@@ -10,20 +10,22 @@ import { ModeToggle } from "./components/theme-toggle";
 // import { CardDescription } from '../lib/Card/card-description';
 // import { CardContent } from '../lib/Card/card-content';
 // import { CardFooter } from '../lib/Card/card-footer';
-import { Tabs } from '../lib/Tabs/tabs';
-import { TabsTrigger } from '../lib/Tabs/tabs-trigger';
-import { TabsList } from '../lib/Tabs/tabs-list';
-import { TabsContent } from '../lib/Tabs/tabs-content';
-import { Pill } from "sona-ui";
+// import { Tabs } from '../lib/Tabs/tabs';
+// import { TabsTrigger } from '../lib/Tabs/tabs-trigger';
+// import { TabsList } from '../lib/Tabs/tabs-list';
+// import { TabsContent } from '../lib/Tabs/tabs-content';
+import { Pill, Select, SelectContent, SelectOption, SelectTrigger } from "sona-ui";
+import { useState } from "react";
 
 function App() {
+  const [value, setValue] = useState("");
   return (
     <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
       <div className="mt-5 flex gap-4">
         <div className="ml-5">
           <ModeToggle />
         </div>
-        <div>
+        <div className="flex gap-5">
           {/* <Tabs defaultValue="account">
             <TabsList>
               <TabsTrigger value="account">Account</TabsTrigger>
@@ -35,6 +37,13 @@ function App() {
             <TabsContent value="theme">Theme content</TabsContent>
           </Tabs> */}
           <Pill label="Pill label" variant="danger" size="small" />
+          <Select value={value} onValueChange={setValue}>
+            <SelectTrigger placeholder='Choose option' className="w-[180px]" />
+            <SelectContent>
+              <SelectOption value='Option 1'>Option 1</SelectOption>
+              <SelectOption value='Option 2'>Option 2</SelectOption>
+            </SelectContent>
+          </Select>
         </div>
       </div>
     </ThemeProvider>

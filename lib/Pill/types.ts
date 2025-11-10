@@ -5,7 +5,7 @@ const PillVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-primary text-white dark:bg-foreground dark:text-muted",
+        default: "bg-primary text-white dark:bg-foreground dark:text-muted",
         secondary: "bg-secondary-foreground text-white",
         success: "bg-green-500 text-white",
         danger: "bg-danger text-white",
@@ -17,7 +17,7 @@ const PillVariants = cva(
       }
     },
     defaultVariants: {
-      variant: "primary",
+      variant: "default",
       size: "default",
     }
   }
