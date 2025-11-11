@@ -10,15 +10,19 @@ const Combobox = ({ value, onValueChange, children, ...props }:
   const [internalValue, setInternalValue] = useState<string | undefined>(value);
   const [query, setQuery] = useState("");
 
+  const isControlled = value !== undefined;
+
+  const currentValue = isControlled ? value : internalValue;
+
   const setValue = (value: string) => {
-    setInternalValue(value);
+    if (!isControlled) setInternalValue(value);
     onValueChange?.(value);
     setOpen(false);
     setQuery("");
   };
 
   return (
-    <ComboboxContext.Provider value={{ value: value ?? internalValue, setValue, open, setOpen, query, setQuery }}>
+    <ComboboxContext.Provider value={{ value: currentValue, setValue, open, setOpen, query, setQuery }}>
       <div className="relative w-full" {...props}>{children}</div>
     </ComboboxContext.Provider>
   )

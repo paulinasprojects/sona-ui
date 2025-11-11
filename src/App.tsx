@@ -14,7 +14,8 @@ import { ModeToggle } from "./components/theme-toggle";
 // import { TabsTrigger } from '../lib/Tabs/tabs-trigger';
 // import { TabsList } from '../lib/Tabs/tabs-list';
 // import { TabsContent } from '../lib/Tabs/tabs-content';
-import { Pill, Select, SelectContent, SelectOption, SelectTrigger } from "sona-ui";
+import { Pill, Select, SelectContent, SelectOption, SelectTrigger, } from "sona-ui";
+// import {Tabs, TabsContent, TabsList, TabsTrigger} from 'sona-ui';
 import { useState } from "react";
 
 function App() {
