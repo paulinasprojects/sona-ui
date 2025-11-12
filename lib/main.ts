@@ -27,9 +27,15 @@ export { TabsList } from "./Tabs/tabs-list";
 export { TabsContent } from './Tabs/tabs-content';
 export {Pill} from './Pill/pill';
 
+export {Dialog} from './Dialog/dialog'
+export {DialogTrigger} from './Dialog/dialog-trigger';
+export { DialogContent } from './Dialog/dialog-content';
+export { DialogClose } from './Dialog/dialog-close';
+
 
 import "./tailwind.css"
 export * from './Combobox/types';
 export * from './Select/types';
 export * from './Tabs/types';
 export * from './Pill/types';
+export * from './Dialog/dialog';

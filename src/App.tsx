@@ -14,12 +14,18 @@ import { ModeToggle } from "./components/theme-toggle";
 // import { TabsTrigger } from '../lib/Tabs/tabs-trigger';
 // import { TabsList } from '../lib/Tabs/tabs-list';
 // import { TabsContent } from '../lib/Tabs/tabs-content';
-import { Pill, Select, SelectContent, SelectOption, SelectTrigger, } from "sona-ui";
+// import { Pill, Select, SelectContent, SelectOption, SelectTrigger, } from "sona-ui";
 // import {Tabs, TabsContent, TabsList, TabsTrigger} from 'sona-ui';
-import { useState } from "react";
+import { Dialog } from '../lib/Dialog/dialog';
+import { DialogTrigger } from '../lib/Dialog/dialog-trigger';
+import { DialogContent } from '../lib/Dialog/dialog-content';
+import { DialogClose } from '../lib/Dialog/dialog-close';
+// import { useState } from "react";
+import { Button } from "sona-ui";
 
 function App() {
-  const [value, setValue] = useState("");
+  // const [value, setValue] = useState("");
+  // const [open, setOpen] = useState(true);
   return (
     <ThemeProvider defaultTheme='dark' storageKey='vite-ui-theme'>
       <div className="mt-5 flex gap-4">
@@ -37,14 +43,24 @@ function App() {
             <TabsContent value="profile">Profile content</TabsContent>
             <TabsContent value="theme">Theme content</TabsContent>
           </Tabs> */}
-          <Pill label="Pill label" variant="danger" size="small" />
+          {/* <Pill label="Pill label" variant="danger" size="small" />
           <Select value={value} onValueChange={setValue}>
             <SelectTrigger placeholder='Choose option' className="w-[180px]" />
             <SelectContent>
               <SelectOption value='Option 1'>Option 1</SelectOption>
               <SelectOption value='Option 2'>Option 2</SelectOption>
             </SelectContent>
-          </Select>
+          </Select> */}
+          <Dialog>
+            <DialogTrigger>Open dialog</DialogTrigger>
+            <DialogContent>This action cannot be undone. This will permanently delete your account
+              and remove your data from our servers.
+              <div className="flex gap-5">
+                <DialogClose>Close</DialogClose>
+                <Button>Save changes</Button>
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </ThemeProvider>
