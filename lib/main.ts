@@ -41,6 +41,8 @@ export { AccordionContent } from './Accordion/accordion-content';
 export { Alert } from './Alert/Alert';
 export { AlertVariants } from './Alert/types';
 
+export {Label} from './Label/label';
+
 
 import "./tailwind.css"
 export * from './Combobox/types';

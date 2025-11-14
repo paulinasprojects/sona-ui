@@ -25,7 +25,7 @@ const ComboboxContent = ({ children, className, ...props }: React.HTMLAttributes
     <div
       className={cn(
         "absolute left-0 z-50 mt-1 w-full overflow-x-hidden overflow-y-auto rounded-sm border shadow-md",
-        "bg-white dark:bg-gray-900 border-gray-200 dakr:border-gray-700",
+        "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700",
         "animate-in fade-in-80 slide-in-from-top-1",
         className
       )}

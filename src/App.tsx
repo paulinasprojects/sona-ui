@@ -3,6 +3,8 @@
 // import { ArrowRight } from 'lucide-react'
 import { ThemeProvider } from "./context/theme-provider";
 import { ModeToggle } from "./components/theme-toggle";
+import Textarea from "../lib/Textarea/textarea";
+import { Label } from "sona-ui";
 // import { Checkbox } from "../lib/Checkbox/checkbox";
 // import { Card } from '../lib/Card/card';
 // import { CardHeader } from '../lib/Card/card-header';
@@ -24,8 +26,6 @@ import { ModeToggle } from "./components/theme-toggle";
 // import { AccordionContent } from "../lib/Accordion/accordion-content";
 // import { AccordionTrigger } from "../lib/Accordion/accordion-trigger";
 // import { AccordionItem } from "../lib/Accordion/accordion-item";
-import { Alert } from "sona-ui";
-import CloseIcon from "../lib/Icons/close-icon";
 // import { useState } from "react";
 // import { Button } from "sona-ui";
 
@@ -84,12 +84,17 @@ function App() {
           </Accordion> */}
         </div>
       </div>
-      <Alert variant="danger" className="mt-5">
+      {/* <Alert variant="danger" className="mt-5">
         <div className="flex items-center gap-4">
           <CloseIcon className="size-4 " />
           <span> Please verify your billing information and try again.</span>
         </div>
-      </Alert>
+      </Alert> */}
+      <div className="mt-5">
+        <Label label="Message" />
+        <Textarea />
+
+      </div>
     </ThemeProvider>
 
   )
