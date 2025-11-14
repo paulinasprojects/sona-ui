@@ -27,10 +27,16 @@ export { TabsList } from "./Tabs/tabs-list";
 export { TabsContent } from './Tabs/tabs-content';
 export {Pill} from './Pill/pill';
 
-export {Dialog} from './Dialog/dialog'
+export {Dialog, useDialogContext} from './Dialog/dialog'
 export {DialogTrigger} from './Dialog/dialog-trigger';
 export { DialogContent } from './Dialog/dialog-content';
 export { DialogClose } from './Dialog/dialog-close';
+
+export { Accordion, useAccordionContext } from './Accordion/accordion';
+export { AccordionTrigger } from './Accordion/accordion-trigger';
+export { AccordionItem } from './Accordion/accordion-item';
+export { AccordionItemContext, useAccordionItemContext } from './Accordion/accordion-item-context';
+export { AccordionContent } from './Accordion/accordion-content';
 
 
 import "./tailwind.css"
@@ -39,3 +45,5 @@ export * from './Select/types';
 export * from './Tabs/types';
 export * from './Pill/types';
 export * from './Dialog/dialog';
+export * from './Accordion/types';
+export * from './Accordion/types';

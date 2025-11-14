@@ -16,12 +16,16 @@ import { ModeToggle } from "./components/theme-toggle";
 // import { TabsContent } from '../lib/Tabs/tabs-content';
 // import { Pill, Select, SelectContent, SelectOption, SelectTrigger, } from "sona-ui";
 // import {Tabs, TabsContent, TabsList, TabsTrigger} from 'sona-ui';
-import { Dialog } from '../lib/Dialog/dialog';
-import { DialogTrigger } from '../lib/Dialog/dialog-trigger';
-import { DialogContent } from '../lib/Dialog/dialog-content';
-import { DialogClose } from '../lib/Dialog/dialog-close';
+// import { Dialog } from '../lib/Dialog/dialog';
+// import { DialogTrigger } from '../lib/Dialog/dialog-trigger';
+// import { DialogContent } from '../lib/Dialog/dialog-content';
+// import { DialogClose } from '../lib/Dialog/dialog-close';
+import { Accordion } from '../lib/Accordion/accordion';
+import { AccordionContent } from "../lib/Accordion/accordion-content";
+import { AccordionTrigger } from "../lib/Accordion/accordion-trigger";
+import { AccordionItem } from "../lib/Accordion/accordion-item";
 // import { useState } from "react";
-import { Button } from "sona-ui";
+// import { Button } from "sona-ui";
 
 function App() {
   // const [value, setValue] = useState("");
@@ -51,7 +55,7 @@ function App() {
               <SelectOption value='Option 2'>Option 2</SelectOption>
             </SelectContent>
           </Select> */}
-          <Dialog>
+          {/* <Dialog>
             <DialogTrigger>Open dialog</DialogTrigger>
             <DialogContent>This action cannot be undone. This will permanently delete your account
               and remove your data from our servers.
@@ -60,7 +64,22 @@ function App() {
                 <Button>Save changes</Button>
               </div>
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
+          <Accordion defaultValue="item-1" className="w-[550px]">
+            <AccordionItem value="item-1">
+              <AccordionTrigger>What is your return policy?</AccordionTrigger>
+              <AccordionContent>
+                You can return any item within 30 days of purchase.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-2">
+              <AccordionTrigger>How do I contact support?</AccordionTrigger>
+              <AccordionContent>
+                You can reach our support team via email or live chat.
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </div>
     </ThemeProvider>
