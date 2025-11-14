@@ -38,6 +38,9 @@ export { AccordionItem } from './Accordion/accordion-item';
 export { AccordionItemContext, useAccordionItemContext } from './Accordion/accordion-item-context';
 export { AccordionContent } from './Accordion/accordion-content';
 
+export { Alert } from './Alert/Alert';
+export { AlertVariants } from './Alert/types';
+
 
 import "./tailwind.css"
 export * from './Combobox/types';
