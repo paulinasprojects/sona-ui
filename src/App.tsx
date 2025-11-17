@@ -3,8 +3,9 @@
 // import { ArrowRight } from 'lucide-react'
 import { ThemeProvider } from "./context/theme-provider";
 import { ModeToggle } from "./components/theme-toggle";
-import Textarea from "../lib/Textarea/textarea";
-import { Label } from "sona-ui";
+// import { Textarea } from "../lib/Textarea/textarea";
+// import { Label } from "sona-ui";
+import { Pagination } from "../lib/Pagination/pagination";
 // import { Checkbox } from "../lib/Checkbox/checkbox";
 // import { Card } from '../lib/Card/card';
 // import { CardHeader } from '../lib/Card/card-header';
@@ -91,9 +92,8 @@ function App() {
         </div>
       </Alert> */}
       <div className="mt-5">
-        <Label label="Message" />
-        <Textarea />
 
+        <Pagination currentPage={1} setCurrentPage={() => { }} totalPages={10} />
       </div>
     </ThemeProvider>
 

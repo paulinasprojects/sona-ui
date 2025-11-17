@@ -42,7 +42,8 @@ export { Alert } from './Alert/Alert';
 export { AlertVariants } from './Alert/types';
 
 export {Label} from './Label/label';
-
+export {Textarea} from './Textarea/textarea';
+export { Pagination } from './Pagination/pagination';
 
 import "./tailwind.css"
 export * from './Combobox/types';
@@ -52,3 +53,4 @@ export * from './Pill/types';
 export * from './Dialog/dialog';
 export * from './Accordion/types';
 export * from './Accordion/types';
+export * from './Pagination/types';
