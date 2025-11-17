@@ -5,7 +5,7 @@ import { ThemeProvider } from "./context/theme-provider";
 import { ModeToggle } from "./components/theme-toggle";
 // import { Textarea } from "../lib/Textarea/textarea";
 // import { Label } from "sona-ui";
-import { Pagination } from "../lib/Pagination/pagination";
+// import { Pagination } from "../lib/Pagination/pagination";
 // import { Checkbox } from "../lib/Checkbox/checkbox";
 // import { Card } from '../lib/Card/card';
 // import { CardHeader } from '../lib/Card/card-header';
@@ -19,16 +19,16 @@ import { Pagination } from "../lib/Pagination/pagination";
 // import { TabsContent } from '../lib/Tabs/tabs-content';
 // import { Pill, Select, SelectContent, SelectOption, SelectTrigger, } from "sona-ui";
 // import {Tabs, TabsContent, TabsList, TabsTrigger} from 'sona-ui';
-import { Dialog } from '../lib/Dialog/dialog';
-import { DialogTrigger } from '../lib/Dialog/dialog-trigger';
-import { DialogContent } from '../lib/Dialog/dialog-content';
-import { DialogClose } from '../lib/Dialog/dialog-close';
-// import { Accordion } from '../lib/Accordion/accordion';
-// import { AccordionContent } from "../lib/Accordion/accordion-content";
-// import { AccordionTrigger } from "../lib/Accordion/accordion-trigger";
-// import { AccordionItem } from "../lib/Accordion/accordion-item";
+// import { Dialog } from '../lib/Dialog/dialog';
+// import { DialogTrigger } from '../lib/Dialog/dialog-trigger';
+// import { DialogContent } from '../lib/Dialog/dialog-content';
+// import { DialogClose } from '../lib/Dialog/dialog-close';
+import { Accordion } from '../lib/Accordion/accordion';
+import { AccordionContent } from "../lib/Accordion/accordion-content";
+import { AccordionTrigger } from "../lib/Accordion/accordion-trigger";
+import { AccordionItem } from "../lib/Accordion/accordion-item";
 // import { useState } from "react";
-import { Button } from "sona-ui";
+// import { Button } from "sona-ui";
 
 function App() {
   // const [value, setValue] = useState("");
@@ -58,7 +58,7 @@ function App() {
               <SelectOption value='Option 2'>Option 2</SelectOption>
             </SelectContent>
           </Select> */}
-          <Dialog>
+          {/* <Dialog>
             <DialogTrigger>Open dialog</DialogTrigger>
             <DialogContent>This action cannot be undone. This will permanently delete your account
               and remove your data from our servers.
@@ -67,8 +67,8 @@ function App() {
                 <Button>Save changes</Button>
               </div>
             </DialogContent>
-          </Dialog>
-          {/* <Accordion defaultValue="item-2" className="w-[550px]">
+          </Dialog> */}
+          <Accordion className="w-[550px]">
             <AccordionItem value="item-1">
               <AccordionTrigger>What is your return policy?</AccordionTrigger>
               <AccordionContent>
@@ -82,7 +82,7 @@ function App() {
                 You can reach our support team via email or live chat.
               </AccordionContent>
             </AccordionItem>
-          </Accordion> */}
+          </Accordion>
         </div>
       </div>
       {/* <Alert variant="danger" className="mt-5">
