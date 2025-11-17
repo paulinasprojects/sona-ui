@@ -1,7 +1,7 @@
 import React from "react";
 import { useAccordionContext } from "./accordion";
 import { cn } from "../lib/utils";
-import ChevronDown from "../Icons/icons";
+import ChevronDown from "../Icons/chevron-down";
 import { useAccordionItemContext } from "./accordion-item-context";
 
 

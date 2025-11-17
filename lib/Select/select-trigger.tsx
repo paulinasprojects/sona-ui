@@ -2,7 +2,7 @@ import React from "react";
 import { useSelectContext } from "./select";
 import { SelectTriggerProps } from './types';
 import { cn } from "../lib/utils";
-import ChevronDown from "../Icons/icons";
+import ChevronDown from "../Icons/chevron-down";
 
 const SelectTrigger = React.forwardRef<HTMLButtonElement, SelectTriggerProps>(
   ({ className, placeholder, ...props }, ref) => {

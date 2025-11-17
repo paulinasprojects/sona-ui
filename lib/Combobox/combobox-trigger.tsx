@@ -2,7 +2,7 @@ import React from 'react'
 import { useComboboxContext } from './combobox'
 import { cn } from '../lib/utils'
 import { ComboboxTriggerProps } from './types';
-import ChevronDown from '../Icons/icons';
+import ChevronDown from '../Icons/chevron-down';
 
 const ComboboxTrigger = React.forwardRef<HTMLButtonElement, ComboboxTriggerProps>(
   ({ className, placeholder, ...props }, ref) => {
